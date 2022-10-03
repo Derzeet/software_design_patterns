@@ -18,5 +18,5 @@ class Email(Component):
     def strategy(self, strategy: mail) -> None:
         self.strategy = strategy
 
-    def send(self, email, list, text, reciever, emails) -> str:
-        return self.strategy.sendEmail(email, list, text, reciever, emails)
+    def send(self, email, text, reciever, emails) -> str:
+        return self.strategy.sendEmail(email, text, reciever, emails)
